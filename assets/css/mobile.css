@@ -1,0 +1,10 @@
+.menuOpen {
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.menuClosed {
+    position: relative;
+    left: -250px;
+    transition: all 0.5s ease;
+}

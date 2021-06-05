@@ -1,0 +1,57 @@
+<h2>Cheque Bancário <i class="fas fa-angle-right fa-xs"></i> Adicionar</h2>
+<br>
+
+<!-- Formulário -->
+<form method="POST">
+<input type="hidden" id="type_check" name="type_check" value="1"> <!-- Code check receipt single -->
+<input type="hidden" id="in_box" name="in_box" value="1"> <!-- Code check in box -->
+<label for="name" class="w100 inline-block">Nome do Titular</label>
+<div class="w50 inline-block">
+    <input type="text" class="w100" name="name" id="name" required>
+</div>
+<br><br>
+<label for="bank" class="w100 inline-block">Nome do Banco</label>
+<div class="w50 inline-block">
+    <input type="text" class="w100" name="bank" id="bank" required>
+</div>
+<br><br>
+<label for="agency" class="w100 inline-block">Agência</label>
+<div class="w50 inline-block">
+    <input type="text" class="w100" name="agency" id="agency" required>
+</div>
+<br><br>
+<label for="bank_account" class="w100 inline-block">Número da Conta</label>
+<div class="w50 inline-block">
+    <input type="text" class="w100" name="bank_account" id="bank_account" required>
+</div>
+<br><br>
+<label for="check_number" class="w100 inline-block">Número do Cheque</label>
+<div class="w50 inline-block">
+    <input type="number" class="w100" name="check_number" id="check_number" required>
+</div>
+<br><br>
+<label for="value_check" class="w100 inline-block">Valor do Cheque</label>
+<div class="w50 inline-block">
+    <input type="text" class="w100" name="value_check" id="value_check" required>
+</div>
+<br><br>
+<label for="issuance_date" class="w100 inline-block">Emissão do Cheque</label>
+<div class="w50 inline-block">
+    <input type="text" class="w100" name="issuance_date" id="issuance_date" placeholder="00/00/0000">
+</div>
+<br><br>
+<label for="due_date" class="w100 inline-block">Vencimento do Cheque</label>
+<div class="w50 inline-block">
+    <input type="text" class="w100" name="due_date" id="due_date" placeholder="00/00/0000">
+</div>
+<br><br>
+    
+    <!-- Botão -->
+    <br><br>
+    <button type="submit">
+	<i class="fas fa-plus-circle fa-lg"></i> &nbsp;
+	Adicionar
+	</button>
+</form>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.mask.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/script_bank.js"></script>
